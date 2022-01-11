@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .form {
+        font-size: 20px;
+        margin:10px;
+      }
+      input::placeholder{
+        color:rgb(0, 26, 255);
+      }
+      button{
+        color:rgb(205, 50, 205);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>User-details</h1>
+    <form class="form">
+      <label for="name">User Id</label><br>
+      <input id="name" type="userid" placeholder="Enter your user name" /><br/>
+      <label for="password">Password</label><br/>
+      <input id="password" type="password" placeholder="Enter your password" minlength="8" maxlength="12"/><br>
+      <button type="login">Login</button><br>
+      <label for="firstname">First name:</label>
+      <input id="firtname" type="text" placeholder="Enter your first name" /><br/>
+      <label for="lastname">Last name:</label>
+      <input id="lastname" type="text" placeholder="Enter your last name" /><br/>
+      <label for="age">Age</label><br>
+      <input id="age" type="number" placeholder="Enter your age" min="18" max="60"/><br>
+      <label for="e-mail">Email</label><br>
+      <input id="e-mail" type="e-mail" placeholder="Enter your Email id" /><br>
+      <label for="file">Upload</label>
+      <input id="file" type="file" placeholder="upload your file" /><br>
+      <label for="file">Query:</label>
+      <input id="file" type="image" placeholder="upload your photo" /><br>  
+    <div>
+      <h2>Gender</h2>
+      <input type="radio" name="gender" id="male"/>
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="Female"/>
+      <label for="Female">Female</label>
+    </div>
+    <div>
+      <h3>Hobbies</h3>
+      <input type="checkbox" name="Hobbies" id="Cricket">
+      <label for="Cricket">Cricket</label><br>
+      <input type="checkbox" name="Hobbies" id="football">
+      <label for="football">Football</label><br>
+      <input type="checkbox" name="Hobbies" id="Carrom">
+      <label for="Carrom">Carrom</label><br>
+      <input type="checkbox" name="Hobbies" id="Chess">
+      <label for="Chess">Chess</label><br>
+      <input type="checkbox" name="Hobbies" id="Kabadi">
+      <label for="Kabadi">Kabadi</label><br>
+    </div>
+    <div>
+      <h4>DOB</h4>
+      <input type="date"/>
+    </div>
+    <div>
+      <h4>Choose your color</h4>
+      <input type="color">
+    </div>
+    <!-- Task 1: In dropdown multiple items must be selected -->
+      <div>
+      <h4>States</h4>
+      <select type="text" placeholder="select your state" multiple>
+      
+      <!-- <select type="text" placeholder="select your state"> -->
+      <option value="TN">Tamilnadu</option>
+      <option value="KL">Kerala</option>
+      <option value="AP">Andhra Pradesh</option>
+      <option value="MP">Madhya Pradesh</option>
+      <option value="UP">Uthra Pradesh</option>
+      <option value="KAR">Karnataka</option>
+      <option value="HAR">Hariyana</option>
+    </select>
+  </div>
+
+    <!-- Task 2: Textarea ize must not be change -->
+      <div>
+       <h5>Textbox</h5>
+       <textarea style="resize:none" placeholder="Comment here" cols="30" rows="5"></textarea>
+      
+       <textarea placeholder="Comment here"  cols="30" rows="5"></textarea>
+      </div>
+    <div class="submission">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </div>
+  </body>
+</html>
